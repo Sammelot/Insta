@@ -6,11 +6,13 @@ import App from './App';
 import './index.css';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyA2r-MouLjwaR7KUyMRi8K5OCED1bE7BAw",
-  authDomain: "t3chfest-b3577.firebaseapp.com",
-  databaseURL: "https://t3chfest-b3577.firebaseio.com",
-  storageBucket: "t3chfest-b3577.appspot.com",
-  messagingSenderId: "714780734095"
+    apiKey: "AIzaSyC8_9D5OT3NooOH-f11jRM-UtDXvqUwGD8",
+    authDomain: "coonstagram-4f6c6.firebaseapp.com",
+    databaseURL: "https://coonstagram-4f6c6.firebaseio.com",
+    projectId: "coonstagram-4f6c6",
+    storageBucket: "coonstagram-4f6c6.appspot.com",
+    messagingSenderId: "275501346021"
+
 });
 
 ReactDOM.render(

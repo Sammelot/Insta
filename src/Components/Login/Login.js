@@ -68,7 +68,7 @@ class HomePage extends Component {
             .signInWithPopup(provider)
             .then((result)=>{
                 console.log(result.user);
-                this.props.history.push('/perfil');
+
             });
 
     }
@@ -79,7 +79,7 @@ class HomePage extends Component {
         firebase.auth().signInWithPopup(provider).then(function(result) {
 
             toastr.success("Bienvenido");
-            this.props.history.push('/perfil');
+
 
         }).catch(function(error) {
         });
@@ -88,7 +88,7 @@ class HomePage extends Component {
     userPassLogin = (email,password) => {
         firebase.auth().signInWithEmailAndPassword(email, password).then((result) =>{
                 toastr.success("Bienvenido");
-                this.props.history.push('/perfil');
+
             }
         ).catch((error) => {
 
@@ -99,7 +99,7 @@ class HomePage extends Component {
         const provider = new firebase.auth.GoogleAuthProvider();
 
         firebase.auth().signInWithPopup(provider)
-            .then(function(result){ this.props.history.push('/perfil')})
+            .then(function(result){console.log(`${result.user.email} ha iniciado sesión`)})
             .catch(error => console.log(`Error ${error.code}: ${error.message}`));
     }
 

@@ -1,0 +1,100 @@
+.nav-back{
+  font-size:50px;
+  font-style: italic;
+  float: right;
+}
+
+
+.video
+{
+position:relative;
+  z-index:9999;
+
+
+
+}
+.vi {
+
+  /*display: table-cell;*/
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  vertical-align: middle;
+
+}
+
+.vi h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 2s;
+  animation-direction: left;
+  font-size: 100px;
+  color: white;
+
+
+}
+.logodos {
+
+width: 40%;
+ height: 40%;
+ margin:10px auto;
+ display:block;
+ -webkit-animation: 3s rotate linear infinite;
+ animation: 3s rotate linear 3s;
+ -webkit-transform-origin: 50% 50%;
+ transform-origin: 50% 50%;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 500px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.carousel-h{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.ant-carousel img {
+  height: 500px;
+  width: 1300px;
+  line-height: 160px;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.vi bu{
+
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  vertical-align: middle;
+
+}
+@keyframes slidein {
+  from {
+    margin-left:20000%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

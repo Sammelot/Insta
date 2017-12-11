@@ -105,7 +105,7 @@ class HomePage extends Component {
 
     handleLogout () {
         firebase.auth().signOut()
-            .then(result => console.log(`${result.user.email} ha cerrado sesión`))
+            .then(result => console.log(`${result.user.email} Ha cerrado sesión`))
             .catch(error => console.log(`Error ${error.code}: ${error.message}`));
     }
 
@@ -178,20 +178,35 @@ class HomePage extends Component {
             );
         } else  {
             return (
+              <div>
+
+
                 <div className="App-intro">
-                    <p className="App-intro">¡Hola, { this.state.user.displayName }!</p>
+                    <p className="App-intro">{ this.state.user.displayName }</p>
+
+
+
+
+      </div>
+
+      <div>
 
                     <button onClick={this.handleLogout} className="App-btn">
                         Salir
                     </button>
+ </div>
+                    <br/>
+                    <br/>
 
-                    <FileUpload onUpload={ this.handleUpload }/>
+<div className="file">
+                    <FileUpload  onUpload={ this.handleUpload }/>
+
 
                     {
                         this.state.pictures.map(picture => (
                             <div className="App-card">
                                 <figure className="App-card-image">
-                                    <img width="320" src={picture.image} />
+                                    <img width="100" src={picture.image} />
                                     <figCaption className="App-card-footer">
                                         <img className="App-card-avatar" src={picture.photoURL} alt={picture.displayName} />
                                         <span className="App-card-name">{picture.displayName}</span>
@@ -200,6 +215,7 @@ class HomePage extends Component {
                             </div>
                         )).reverse()
                     }
+</div>
 
                 </div>
 
@@ -216,10 +232,19 @@ class HomePage extends Component {
             height:"80vh",
         };
         return (
+
+<div>
+
+
+
+
+
             <div className="App">
                 <div style={center}>
                     { this.renderLoginButton() }
                 </div>
+            </div>
+
             </div>
         );
     }

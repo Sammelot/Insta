@@ -1,0 +1,86 @@
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  color: #090B0C;
+  background:#3b665b;
+}
+
+.logo {
+  width:  120px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 16px 24px 16px 16px;
+  float: left;
+}
+
+
+
+
+{/* lo de al lado*/}
+.ant-layout-header {
+  background:#8A8492;
+  padding: 0 60px;
+  height: 70px;
+  line-height: 70px;
+  border-color: white;
+
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #090B0C;
+}
+
+
+.ant-menu-dark.ant-menu-horizontal {
+  border-bottom-color: #9278AD;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
+  border-color: #ffff;
+  border-bottom: 0;
+
+
+}
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-men u-item > a {
+  color: #ffff;
+}
+
+
+
+/*selector de menu */
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-submenu-active,
+.ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-dark .ant-menu-submenu-selected,
+.ant-menu-dark .ant-menu-submenu:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.ant-menu-dark .ant-menu-item:hover > a,
+.ant-menu-dark .ant-menu-item-active > a,
+.ant-menu-dark .ant-menu-submenu-active > a,
+.ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open > a,
+.ant-menu-dark .ant-menu-submenu-selected > a,
+.ant-menu-dark .ant-menu-submenu:hover > a,
+.ant-menu-dark .ant-menu-submenu-title:hover > a {
+  color: #ffff;
+}
+
+
+.ant-menu-dark .ant-menu-item-selected {
+  border-right: 0;
+  color: #ffff;
+}
+.ant-menu-dark .ant-menu-item-selected:after {
+  border-right: 0;
+}
+.ant-menu-dark .ant-menu-item-selected > a,
+.ant-menu-dark .ant-menu-item-selected > a:hover {
+  color: #ffff;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #79a694;
+}

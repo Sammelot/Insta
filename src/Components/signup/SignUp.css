@@ -95,7 +95,7 @@ select.propio {
 
 input[type=submit].aceptar {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #4b7171;
     color: white;
     padding: 14px 20px;
     margin: 10px;
@@ -116,5 +116,5 @@ button.cancelar{
 }
 
 input[type=submit].aceptar:hover {
-    background-color: #64107E;
+    background-color: #95c2c3;
 }
